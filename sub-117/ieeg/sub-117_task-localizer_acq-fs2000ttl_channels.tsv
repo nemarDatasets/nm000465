@@ -1,0 +1,5 @@
+name	type	units	low_cutoff	high_cutoff	sampling_frequency	reference	group	status	status_description	description
+Inpt_RZ2_chn001	TRIG	n/a	n/a	n/a	2000.0	n/a	n/a	good	n/a	analog TTL input Inpt_RZ2_chn001
+Inpt_RZ2_chn002	TRIG	n/a	n/a	n/a	2000.0	n/a	n/a	good	n/a	analog TTL input Inpt_RZ2_chn002
+Inpt_RZ2_chn003	TRIG	n/a	n/a	n/a	2000.0	n/a	n/a	good	n/a	analog TTL input Inpt_RZ2_chn003
+Inpt_RZ2_chn004	TRIG	n/a	n/a	n/a	2000.0	n/a	n/a	good	n/a	analog TTL input Inpt_RZ2_chn004

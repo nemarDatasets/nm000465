@@ -1,0 +1,21 @@
+name	x	y	z	size	group	anatomical_label	hemisphere
+LFPx_RZ2_chn001	n/a	n/a	n/a	n/a	R subgaleal	R subgaleal 1; subgaleal strip over sensorimotor cortex (extracranial)	R
+LFPx_RZ2_chn002	n/a	n/a	n/a	n/a	R subgaleal	R subgaleal 2; subgaleal strip over sensorimotor cortex (extracranial)	R
+LFPx_RZ2_chn003	n/a	n/a	n/a	n/a	R subgaleal	R subgaleal 3; subgaleal strip over sensorimotor cortex (extracranial)	R
+LFPx_RZ2_chn004	n/a	n/a	n/a	n/a	R subgaleal	R subgaleal 4; subgaleal strip over sensorimotor cortex (extracranial)	R
+LFPx_RZ2_chn005	n/a	n/a	n/a	n/a	R subgaleal	R subgaleal 5; subgaleal strip over sensorimotor cortex (extracranial)	R
+LFPx_RZ2_chn006	n/a	n/a	n/a	n/a	R subgaleal	R subgaleal 6; subgaleal strip over sensorimotor cortex (extracranial)	R
+LFPx_RZ2_chn007	n/a	n/a	n/a	n/a	L subgaleal	L subgaleal 1; subgaleal strip over sensorimotor cortex (extracranial)	L
+LFPx_RZ2_chn008	n/a	n/a	n/a	n/a	L subgaleal	L subgaleal 2; subgaleal strip over sensorimotor cortex (extracranial)	L
+LFPx_RZ2_chn009	n/a	n/a	n/a	n/a	L subgaleal	L subgaleal 3; subgaleal strip over sensorimotor cortex (extracranial)	L
+LFPx_RZ2_chn010	n/a	n/a	n/a	n/a	L subgaleal	L subgaleal 4; subgaleal strip over sensorimotor cortex (extracranial)	L
+LFPx_RZ2_chn011	n/a	n/a	n/a	n/a	L subgaleal	L subgaleal 5; subgaleal strip over sensorimotor cortex (extracranial)	L
+LFPx_RZ2_chn012	n/a	n/a	n/a	n/a	L subgaleal	L subgaleal 6; subgaleal strip over sensorimotor cortex (extracranial)	L
+LFPx_RZ2_chn013	n/a	n/a	n/a	n/a	n/a	differs between main task and localizer: R STN LFP 0 | n/a	n/a
+LFPx_RZ2_chn014	n/a	n/a	n/a	n/a	n/a	differs between main task and localizer: R STN LFP 1 | n/a	n/a
+LFPx_RZ2_chn015	n/a	n/a	n/a	n/a	n/a	differs between main task and localizer: R STN LFP 2 | n/a	n/a
+LFPx_RZ2_chn016	n/a	n/a	n/a	n/a	n/a	differs between main task and localizer: R STN LFP 3 | n/a	n/a
+LFPx_RZ2_chn017	n/a	n/a	n/a	n/a	L STN LFP	L STN LFP 0; subthalamic nucleus	L
+LFPx_RZ2_chn018	n/a	n/a	n/a	n/a	L STN LFP	L STN LFP 1; subthalamic nucleus	L
+LFPx_RZ2_chn019	n/a	n/a	n/a	n/a	L STN LFP	L STN LFP 2; subthalamic nucleus	L
+LFPx_RZ2_chn020	n/a	n/a	n/a	n/a	L STN LFP	L STN LFP 3; subthalamic nucleus	L

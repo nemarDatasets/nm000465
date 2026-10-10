@@ -1,0 +1,50 @@
+{
+  "Name": "Intraoperative STN/thalamic DBS-lead LFP with subgaleal sensorimotor strips during a stop-signal task (Diesburg, Greenlee & Wessel, 2021)",
+  "BIDSVersion": "1.10.0",
+  "DatasetType": "raw",
+  "License": "CC0-1.0",
+  "Authors": [
+    "Darcy A. Diesburg",
+    "Jeremy D. W. Greenlee",
+    "Jan R. Wessel"
+  ],
+  "Funding": [
+    "NIH R01NS117753 (J.R.W.)",
+    "NIH T32GM108540 (D.A.D.)",
+    "NSF CAREER 1752355 (J.R.W.)",
+    "Roy J. and Lucille A. Carver College of Medicine, University of Iowa",
+    "Iowa Neuroscience Institute, University of Iowa"
+  ],
+  "HowToAcknowledge": "Cite Diesburg DA, Greenlee JDW, Wessel JR (2021) Cortico-subcortical beta burst dynamics underlying movement cancellation in humans. eLife 10:e70270, doi:10.7554/eLife.70270; and the Dryad dataset doi:10.5061/dryad.gf1vhhmq0.",
+  "ReferencesAndLinks": [
+    "https://doi.org/10.7554/eLife.70270",
+    "https://doi.org/10.5061/dryad.gf1vhhmq0",
+    "https://doi.org/10.5281/zenodo.4784092"
+  ],
+  "Keywords": [
+    "subthalamic nucleus",
+    "thalamus",
+    "beta bursts",
+    "stop-signal task",
+    "response inhibition",
+    "deep brain stimulation",
+    "Parkinson's disease",
+    "essential tremor"
+  ],
+  "SourceDatasets": [
+    {
+      "DOI": "doi:10.5061/dryad.gf1vhhmq0",
+      "URL": "https://datadryad.org/dataset/doi:10.5061/dryad.gf1vhhmq0"
+    },
+    {
+      "DOI": "doi:10.5281/zenodo.4784092",
+      "URL": "https://zenodo.org/records/4784092"
+    }
+  ],
+  "GeneratedBy": [
+    {
+      "Name": "b3w10_convert_betaburst.py",
+      "Description": "TDT exports (MATLAB structs) to BrainVision float32, values unchanged; channel locations from the authors' getchans.m/getlocchans.m; TDT epoc stores to events.tsv. Code in code/."
+    }
+  ]
+}

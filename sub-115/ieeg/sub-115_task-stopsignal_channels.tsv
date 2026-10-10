@@ -1,0 +1,26 @@
+name	type	units	low_cutoff	high_cutoff	sampling_frequency	reference	group	status	status_description	description
+LFPx_RZ2_chn001	EEG	n/a	n/a	n/a	2000.0	n/a	R subgaleal	good	n/a	R subgaleal 1 (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn001
+LFPx_RZ2_chn002	EEG	n/a	n/a	n/a	2000.0	n/a	R subgaleal	good	n/a	R subgaleal 2 (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn002
+LFPx_RZ2_chn003	EEG	n/a	n/a	n/a	2000.0	n/a	R subgaleal	good	n/a	R subgaleal 3 (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn003
+LFPx_RZ2_chn004	EEG	n/a	n/a	n/a	2000.0	n/a	R subgaleal	good	n/a	R subgaleal 4 (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn004
+LFPx_RZ2_chn005	EEG	n/a	n/a	n/a	2000.0	n/a	R subgaleal	good	n/a	R subgaleal 5 (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn005
+LFPx_RZ2_chn006	EEG	n/a	n/a	n/a	2000.0	n/a	R subgaleal	good	n/a	R subgaleal 6 (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn006
+LFPx_RZ2_chn007	EEG	n/a	n/a	n/a	2000.0	n/a	R subgaleal	good	n/a	R subgaleal 7 (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn007
+LFPx_RZ2_chn008	EEG	n/a	n/a	n/a	2000.0	n/a	R subgaleal	good	n/a	R subgaleal 8 (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn008
+LFPx_RZ2_chn009	EEG	n/a	n/a	n/a	2000.0	n/a	L subgaleal	good	n/a	L subgaleal 1 (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn009
+LFPx_RZ2_chn010	EEG	n/a	n/a	n/a	2000.0	n/a	L subgaleal	good	n/a	L subgaleal 2 (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn010
+LFPx_RZ2_chn011	EEG	n/a	n/a	n/a	2000.0	n/a	L subgaleal	good	n/a	L subgaleal 3 (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn011
+LFPx_RZ2_chn012	EEG	n/a	n/a	n/a	2000.0	n/a	L subgaleal	good	n/a	L subgaleal 4 (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn012
+LFPx_RZ2_chn013	EEG	n/a	n/a	n/a	2000.0	n/a	L subgaleal	good	n/a	L subgaleal 5 (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn013
+LFPx_RZ2_chn014	EEG	n/a	n/a	n/a	2000.0	n/a	L subgaleal	good	n/a	L subgaleal 6 (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn014
+LFPx_RZ2_chn015	EEG	n/a	n/a	n/a	2000.0	n/a	L subgaleal	good	n/a	L subgaleal 7 (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn015
+LFPx_RZ2_chn016	EEG	n/a	n/a	n/a	2000.0	n/a	L subgaleal	good	n/a	L subgaleal 8 (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn016
+LFPx_RZ2_chn017	DBS	n/a	n/a	n/a	2000.0	n/a	L VIM LFP	good	n/a	L VIM LFP 0 (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn017
+LFPx_RZ2_chn018	DBS	n/a	n/a	n/a	2000.0	n/a	L VIM LFP	good	n/a	L VIM LFP 1 (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn018
+LFPx_RZ2_chn019	DBS	n/a	n/a	n/a	2000.0	n/a	L VIM LFP	good	n/a	L VIM LFP 2 (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn019
+LFPx_RZ2_chn020	DBS	n/a	n/a	n/a	2000.0	n/a	L VIM LFP	good	n/a	L VIM LFP 3 (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn020
+LFPx_RZ2_chn021	DBS	n/a	n/a	n/a	2000.0	n/a	R VIM LFP	good	n/a	R VIM LFP 0 (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn021
+LFPx_RZ2_chn022	DBS	n/a	n/a	n/a	2000.0	n/a	R VIM LFP	good	n/a	R VIM LFP 1 (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn022
+LFPx_RZ2_chn023	DBS	n/a	n/a	n/a	2000.0	n/a	R VIM LFP	good	n/a	R VIM LFP 2 (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn023
+LFPx_RZ2_chn024	DBS	n/a	n/a	n/a	2000.0	n/a	R VIM LFP	good	n/a	R VIM LFP 3 (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn024
+Inpt_RZ2_chn001	TRIG	n/a	n/a	n/a	2000.0	n/a	n/a	good	n/a	analog TTL input Inpt_RZ2_chn001

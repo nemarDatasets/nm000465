@@ -1,0 +1,17 @@
+name	x	y	z	size	group	anatomical_label	hemisphere
+LFPx_RZ2_chn001	n/a	n/a	n/a	n/a	L subgaleal medial	L subgaleal medial; subgaleal strip over sensorimotor cortex (extracranial)	L
+LFPx_RZ2_chn002	n/a	n/a	n/a	n/a	L subgaleal mediolateral	L subgaleal mediolateral; subgaleal strip over sensorimotor cortex (extracranial)	L
+LFPx_RZ2_chn003	n/a	n/a	n/a	n/a	L subgaleal lateromedial	L subgaleal lateromedial; subgaleal strip over sensorimotor cortex (extracranial)	L
+LFPx_RZ2_chn004	n/a	n/a	n/a	n/a	L subgaleal lateral	L subgaleal lateral; subgaleal strip over sensorimotor cortex (extracranial)	L
+LFPx_RZ2_chn005	n/a	n/a	n/a	n/a	R subgaleal medial	R subgaleal medial; subgaleal strip over sensorimotor cortex (extracranial)	R
+LFPx_RZ2_chn006	n/a	n/a	n/a	n/a	R subgaleal mediolateral	R subgaleal mediolateral; subgaleal strip over sensorimotor cortex (extracranial)	R
+LFPx_RZ2_chn007	n/a	n/a	n/a	n/a	R subgaleal lateromedial	R subgaleal lateromedial; subgaleal strip over sensorimotor cortex (extracranial)	R
+LFPx_RZ2_chn008	n/a	n/a	n/a	n/a	R subgaleal lateral	R subgaleal lateral; subgaleal strip over sensorimotor cortex (extracranial)	R
+LFPx_RZ2_chn009	n/a	n/a	n/a	n/a	L VIM LFP	L VIM LFP 0; ventral intermediate nucleus of the thalamus	L
+LFPx_RZ2_chn010	n/a	n/a	n/a	n/a	L VIM LFP	L VIM LFP 1; ventral intermediate nucleus of the thalamus	L
+LFPx_RZ2_chn011	n/a	n/a	n/a	n/a	L VIM LFP	L VIM LFP 2; ventral intermediate nucleus of the thalamus	L
+LFPx_RZ2_chn012	n/a	n/a	n/a	n/a	L VIM LFP	L VIM LFP 3; ventral intermediate nucleus of the thalamus	L
+LFPx_RZ2_chn013	n/a	n/a	n/a	n/a	R VIM LFP	R VIM LFP 0; ventral intermediate nucleus of the thalamus	R
+LFPx_RZ2_chn014	n/a	n/a	n/a	n/a	R VIM LFP	R VIM LFP 1; ventral intermediate nucleus of the thalamus	R
+LFPx_RZ2_chn015	n/a	n/a	n/a	n/a	R VIM LFP	R VIM LFP 2; ventral intermediate nucleus of the thalamus	R
+LFPx_RZ2_chn016	n/a	n/a	n/a	n/a	R VIM LFP	R VIM LFP 3; ventral intermediate nucleus of the thalamus	R

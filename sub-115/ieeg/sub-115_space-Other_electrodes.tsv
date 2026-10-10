@@ -1,0 +1,25 @@
+name	x	y	z	size	group	anatomical_label	hemisphere
+LFPx_RZ2_chn001	n/a	n/a	n/a	n/a	n/a	differs between main task and localizer: L subgaleal 1 | R subgaleal 1	n/a
+LFPx_RZ2_chn002	n/a	n/a	n/a	n/a	n/a	differs between main task and localizer: L subgaleal 2 | R subgaleal 2	n/a
+LFPx_RZ2_chn003	n/a	n/a	n/a	n/a	n/a	differs between main task and localizer: L subgaleal 3 | R subgaleal 3	n/a
+LFPx_RZ2_chn004	n/a	n/a	n/a	n/a	n/a	differs between main task and localizer: L subgaleal 4 | R subgaleal 4	n/a
+LFPx_RZ2_chn005	n/a	n/a	n/a	n/a	n/a	differs between main task and localizer: L subgaleal 5 | R subgaleal 5	n/a
+LFPx_RZ2_chn006	n/a	n/a	n/a	n/a	n/a	differs between main task and localizer: L subgaleal 6 | R subgaleal 6	n/a
+LFPx_RZ2_chn007	n/a	n/a	n/a	n/a	n/a	differs between main task and localizer: L subgaleal 7 | R subgaleal 7	n/a
+LFPx_RZ2_chn008	n/a	n/a	n/a	n/a	n/a	differs between main task and localizer: L subgaleal 8 | R subgaleal 8	n/a
+LFPx_RZ2_chn009	n/a	n/a	n/a	n/a	n/a	differs between main task and localizer: L subgaleal 1 | R subgaleal 1	n/a
+LFPx_RZ2_chn010	n/a	n/a	n/a	n/a	n/a	differs between main task and localizer: L subgaleal 2 | R subgaleal 2	n/a
+LFPx_RZ2_chn011	n/a	n/a	n/a	n/a	n/a	differs between main task and localizer: L subgaleal 3 | R subgaleal 3	n/a
+LFPx_RZ2_chn012	n/a	n/a	n/a	n/a	n/a	differs between main task and localizer: L subgaleal 4 | R subgaleal 4	n/a
+LFPx_RZ2_chn013	n/a	n/a	n/a	n/a	n/a	differs between main task and localizer: L subgaleal 5 | R subgaleal 5	n/a
+LFPx_RZ2_chn014	n/a	n/a	n/a	n/a	n/a	differs between main task and localizer: L subgaleal 6 | R subgaleal 6	n/a
+LFPx_RZ2_chn015	n/a	n/a	n/a	n/a	n/a	differs between main task and localizer: L subgaleal 7 | R subgaleal 7	n/a
+LFPx_RZ2_chn016	n/a	n/a	n/a	n/a	n/a	differs between main task and localizer: L subgaleal 8 | R subgaleal 8	n/a
+LFPx_RZ2_chn017	n/a	n/a	n/a	n/a	n/a	differs between main task and localizer: L VIM LFP 0 | n/a	n/a
+LFPx_RZ2_chn018	n/a	n/a	n/a	n/a	n/a	differs between main task and localizer: L VIM LFP 1 | n/a	n/a
+LFPx_RZ2_chn019	n/a	n/a	n/a	n/a	n/a	differs between main task and localizer: L VIM LFP 2 | n/a	n/a
+LFPx_RZ2_chn020	n/a	n/a	n/a	n/a	n/a	differs between main task and localizer: L VIM LFP 3 | n/a	n/a
+LFPx_RZ2_chn021	n/a	n/a	n/a	n/a	n/a	differs between main task and localizer: R VIM LFP 0 | n/a	n/a
+LFPx_RZ2_chn022	n/a	n/a	n/a	n/a	n/a	differs between main task and localizer: R VIM LFP 1 | n/a	n/a
+LFPx_RZ2_chn023	n/a	n/a	n/a	n/a	n/a	differs between main task and localizer: R VIM LFP 2 | n/a	n/a
+LFPx_RZ2_chn024	n/a	n/a	n/a	n/a	n/a	differs between main task and localizer: R VIM LFP 3 | n/a	n/a

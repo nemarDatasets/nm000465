@@ -1,0 +1,9 @@
+{
+  "SpatialReference": "n/a (no coordinates released)",
+  "anatomical_label": {
+    "Description": "Authors' channel label and structure"
+  },
+  "hemisphere": {
+    "Description": "From the authors' label (L/R)"
+  }
+}

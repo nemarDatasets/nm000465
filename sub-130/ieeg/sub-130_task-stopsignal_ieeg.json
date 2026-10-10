@@ -1,0 +1,26 @@
+{
+  "TaskName": "stopsignal",
+  "TaskDescription": "Auditory stop-signal task (go tone; on stop trials a second tone signals to cancel the response) (DataREADME / article)",
+  "PowerLineFrequency": 60,
+  "SoftwareFilters": "n/a",
+  "HardwareFilters": {
+    "LowPass": {
+      "Description": "7.5 kHz hardware low-pass (Dryad methods)"
+    }
+  },
+  "iEEGReference": "n/a (not stated in the release)",
+  "iEEGPlacementScheme": "Intraoperative: DBS leads (Medtronic 3387) in the subthalamic nucleus or thalamus (VIM) plus 4/6/8-contact strips in the subgaleal space over sensorimotor cortex (Dryad methods); per-channel location from the authors' getchans.m/getlocchans.m",
+  "Manufacturer": "Tucker-Davis Technologies",
+  "ManufacturersModelName": "RZ2 with RA16PA Medusa preamplifier and RA16LI headstage (Dryad methods)",
+  "ElectricalStimulation": false,
+  "SamplingFrequency": 2000.0,
+  "RecordingDuration": 873.0655,
+  "RecordingType": "continuous",
+  "ECOGChannelCount": 0,
+  "SEEGChannelCount": 0,
+  "DBSChannelCount": 8,
+  "EEGChannelCount": 8,
+  "EMGChannelCount": 0,
+  "MiscChannelCount": 0,
+  "TriggerChannelCount": 4
+}

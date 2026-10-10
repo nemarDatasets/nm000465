@@ -1,0 +1,18 @@
+name	type	units	low_cutoff	high_cutoff	sampling_frequency	reference	group	status	status_description	description
+LFPx_RZ2_chn001	MISC	n/a	n/a	n/a	2000.0	n/a	L Forehead	good	n/a	L Forehead (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn001
+LFPx_RZ2_chn002	MISC	n/a	n/a	n/a	2000.0	n/a	R Forehead	good	n/a	R Forehead (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn002
+LFPx_RZ2_chn003	MISC	n/a	n/a	n/a	2000.0	n/a	C Forehead	good	n/a	C Forehead (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn003
+LFPx_RZ2_chn004	MISC	n/a	n/a	n/a	2000.0	n/a	n/a	good	n/a	n/a (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn004
+LFPx_RZ2_chn005	DBS	n/a	n/a	n/a	2000.0	n/a	R STN LFP	good	n/a	R STN LFP 0 (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn005
+LFPx_RZ2_chn006	DBS	n/a	n/a	n/a	2000.0	n/a	R STN LFP	good	n/a	R STN LFP 1 (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn006
+LFPx_RZ2_chn007	DBS	n/a	n/a	n/a	2000.0	n/a	R STN LFP	good	n/a	R STN LFP 2 (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn007
+LFPx_RZ2_chn008	DBS	n/a	n/a	n/a	2000.0	n/a	R STN LFP	good	n/a	R STN LFP 3 (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn008
+LFPx_RZ2_chn009	DBS	n/a	n/a	n/a	2000.0	n/a	L STN LFP	good	n/a	L STN LFP 0 (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn009
+LFPx_RZ2_chn010	DBS	n/a	n/a	n/a	2000.0	n/a	L STN LFP	good	n/a	L STN LFP 1 (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn010
+LFPx_RZ2_chn011	DBS	n/a	n/a	n/a	2000.0	n/a	L STN LFP	good	n/a	L STN LFP 2 (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn011
+LFPx_RZ2_chn012	DBS	n/a	n/a	n/a	2000.0	n/a	L STN LFP	good	n/a	L STN LFP 3 (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn012
+LFPx_RZ2_chn013	MISC	n/a	n/a	n/a	2000.0	n/a	n/a	good	n/a	n/a (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn013
+LFPx_RZ2_chn014	MISC	n/a	n/a	n/a	2000.0	n/a	n/a	good	n/a	n/a (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn014
+LFPx_RZ2_chn015	MISC	n/a	n/a	n/a	2000.0	n/a	n/a	good	n/a	n/a (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn015
+LFPx_RZ2_chn016	MISC	n/a	n/a	n/a	2000.0	n/a	n/a	good	n/a	n/a (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn016
+Inpt_RZ2_chn001	TRIG	n/a	n/a	n/a	2000.0	n/a	n/a	good	n/a	analog TTL input Inpt_RZ2_chn001

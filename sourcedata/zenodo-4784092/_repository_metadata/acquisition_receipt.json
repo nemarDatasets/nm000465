@@ -1,0 +1,63 @@
+{
+ "id": "d3-dryad-beta-burst",
+ "source": "zenodo",
+ "record": "4784092",
+ "doi": "10.5281/zenodo.4784092",
+ "title": "Cortico-subcortical \u03b2 burst dynamics underlying movement cancellation in humans",
+ "license": {
+  "id": "cc-by-4.0"
+ },
+ "version": null,
+ "publication_date": "2022-01-13",
+ "updated": "2022-06-04T17:14:06.216684+00:00",
+ "files": [
+  {
+   "key": "Audiostop.zip",
+   "size": 6123,
+   "md5": "d7d6d5803ebb018a354312b50c8c471e",
+   "present": true,
+   "local_size": 6123
+  },
+  {
+   "key": "StopOR_preprocess.m",
+   "size": 4616,
+   "md5": "00691beb572a2176243a83c8261d7e72",
+   "present": true,
+   "local_size": 4616
+  },
+  {
+   "key": "StopOR_initialize.m",
+   "size": 2578,
+   "md5": "28f074ca789533a5f1e26d785e019141",
+   "present": true,
+   "local_size": 2578
+  },
+  {
+   "key": "functions.zip",
+   "size": 94320,
+   "md5": "ea5a83ba8ea5878955d6cfaef4a0649f",
+   "present": true,
+   "local_size": 94320
+  },
+  {
+   "key": "StopOR_betaev.m",
+   "size": 3691,
+   "md5": "7152331d59592d7ff406ec1c33e75d9c",
+   "present": true,
+   "local_size": 3691
+  },
+  {
+   "key": "README",
+   "size": 1045,
+   "md5": "6e713c9306263b97c8dbd5596bfe0605",
+   "present": true,
+   "local_size": 1045
+  }
+ ],
+ "verified_md5": 6,
+ "n_files": 6,
+ "complete": true,
+ "bytes": 112373,
+ "include_regex": "",
+ "finished_utc": "2026-10-08T00:44:02.042316Z"
+}

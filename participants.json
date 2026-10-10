@@ -1,0 +1,15 @@
+{
+  "source_id": {
+    "Description": "File name in the Dryad release"
+  },
+  "age": {
+    "Description": "Not in the release (behaviour files have empty age fields)",
+    "Units": "year"
+  },
+  "sex": {
+    "Description": "Not in the release"
+  },
+  "dbs_target": {
+    "Description": "DBS lead targets present in the recording, from the authors' channel tables (STN = subthalamic nucleus, VIM = ventral intermediate thalamus)"
+  }
+}

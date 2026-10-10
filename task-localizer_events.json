@@ -1,0 +1,19 @@
+{
+  "onset": {
+    "Description": "TDT epoc time (s from the start of the TDT block)",
+    "Units": "s"
+  },
+  "duration": {
+    "Description": "0",
+    "Units": "s"
+  },
+  "trial_type": {
+    "Description": "TDT epoc store name (e.g. Tic2/Epoc = TDT tick markers, LATT/RATT = attenuation stores); task triggers are in the TRIG channels (Inpt_RZ2_chnNNN, analog TTL inputs; DataREADME: triggers are up-flanks in an input channel)"
+  },
+  "value": {
+    "Description": "Epoc value"
+  },
+  "sample": {
+    "Description": "onset x sampling frequency"
+  }
+}

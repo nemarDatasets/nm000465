@@ -1,0 +1,22 @@
+This file describes the steps taken to preprocess and analyze the LFP data in the manuscript "Cortico-subcortical beta burst dynamics underlying movement cancellation in humans".
+
+For this analysis, MATLAB 2017a or later is needed, including the signal processing toolbox and EEGLab toolbox. To conduct this analysis yourself, you'll also need to download these folders and main analysis scripts:
+Required folders, including folder contents:
+data (raw data)
+pp
+functions
+behav
+beta
+
+Required scripts (for the main directory. you will also need everything in the functions folder):
+StopOR_initialize.m
+StopOR_preprocess.m (optional, we've done this for you already)
+StopOR_betaev.m
+
+To reproduce the results, execute the StopOR_betaev.m section by section (carries out main analyses and outputs statistical test results, figures).
+
+Contact Darcy Diesburg or Jan Wessel with any questions:
+darcy-diesburg@uiowa.edu / darcy.diesburg@gmail.com (non-institutional email)
+jan-wessel@uiowa.edu
+
+-Darcy A. Diesburg, Wessel Lab, University of Iowa, 2021

@@ -1,0 +1,18 @@
+name	type	units	low_cutoff	high_cutoff	sampling_frequency	reference	group	status	status_description	description
+LFPx_RZ2_chn001	EEG	n/a	n/a	n/a	2000.0	n/a	L subgaleal medial	good	n/a	L subgaleal medial (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn001
+LFPx_RZ2_chn002	EEG	n/a	n/a	n/a	2000.0	n/a	L subgaleal mediolateral	good	n/a	L subgaleal mediolateral (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn002
+LFPx_RZ2_chn003	EEG	n/a	n/a	n/a	2000.0	n/a	L subgaleal lateromedial	good	n/a	L subgaleal lateromedial (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn003
+LFPx_RZ2_chn004	EEG	n/a	n/a	n/a	2000.0	n/a	L subgaleal lateral	good	n/a	L subgaleal lateral (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn004
+LFPx_RZ2_chn005	EEG	n/a	n/a	n/a	2000.0	n/a	R subgaleal medial	good	n/a	R subgaleal medial (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn005
+LFPx_RZ2_chn006	EEG	n/a	n/a	n/a	2000.0	n/a	R subgaleal mediolateral	good	n/a	R subgaleal mediolateral (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn006
+LFPx_RZ2_chn007	EEG	n/a	n/a	n/a	2000.0	n/a	R subgaleal lateromedial	good	n/a	R subgaleal lateromedial (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn007
+LFPx_RZ2_chn008	EEG	n/a	n/a	n/a	2000.0	n/a	R subgaleal lateral	good	n/a	R subgaleal lateral (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn008
+LFPx_RZ2_chn009	DBS	n/a	n/a	n/a	2000.0	n/a	L STN LFP	good	n/a	L STN LFP 0 (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn009
+LFPx_RZ2_chn010	DBS	n/a	n/a	n/a	2000.0	n/a	L STN LFP	good	n/a	L STN LFP 1 (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn010
+LFPx_RZ2_chn011	DBS	n/a	n/a	n/a	2000.0	n/a	L STN LFP	good	n/a	L STN LFP 2 (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn011
+LFPx_RZ2_chn012	DBS	n/a	n/a	n/a	2000.0	n/a	L STN LFP	good	n/a	L STN LFP 3 (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn012
+LFPx_RZ2_chn013	DBS	n/a	n/a	n/a	2000.0	n/a	R STN LFP	good	n/a	R STN LFP 0 (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn013
+LFPx_RZ2_chn014	DBS	n/a	n/a	n/a	2000.0	n/a	R STN LFP	good	n/a	R STN LFP 1 (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn014
+LFPx_RZ2_chn015	DBS	n/a	n/a	n/a	2000.0	n/a	R STN LFP	good	n/a	R STN LFP 2 (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn015
+LFPx_RZ2_chn016	DBS	n/a	n/a	n/a	2000.0	n/a	R STN LFP	good	n/a	R STN LFP 3 (authors' getchans/getlocchans); TDT store LFPx_RZ2_chn016
+Inpt_RZ2_chn001	TRIG	n/a	n/a	n/a	2000.0	n/a	n/a	good	n/a	analog TTL input Inpt_RZ2_chn001
