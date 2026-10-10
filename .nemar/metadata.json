@@ -1,0 +1,115 @@
+{
+  "version": "2.0",
+  "pipeline_stage": "validated",
+  "authors": {
+    "Darcy A. Diesburg": {
+      "orcid": "0000-0002-3489-7624"
+    },
+    "Jeremy D. W. Greenlee": {},
+    "Jan R. Wessel": {
+      "orcid": "0000-0002-7298-6601"
+    }
+  },
+  "related_identifiers": [
+    {
+      "identifier": "10.5061/dryad.gf1vhhmq0",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "10.5281/zenodo.4784092",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "10.7554/eLife.70270",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/nm000465",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/nm000465",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    }
+  ],
+  "funding_references": [
+    {
+      "funder_name": "Roy J. and Lucille A. Carver College of Medicine, University of Iowa"
+    },
+    {
+      "funder_name": "Iowa Neuroscience Institute, University of Iowa"
+    },
+    {
+      "funder_name": "NIH",
+      "award_number": "R01NS117753"
+    },
+    {
+      "funder_name": "NIH",
+      "award_number": "T32GM108540"
+    },
+    {
+      "funder_name": "NSF",
+      "award_number": "1752355",
+      "award_title": "CAREER"
+    }
+  ],
+  "title": "Intraoperative STN/thalamic DBS-lead LFP with subgaleal sensorimotor strips during a stop-signal task (Diesburg, Greenlee & Wessel, 2021)",
+  "license": "CC0-1.0",
+  "dataset_type": "raw",
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "ieeg"
+  ],
+  "resource_type_specific": "iEEG Dataset",
+  "sizes": [
+    "20.67 GB (138 files)"
+  ],
+  "formats": [
+    ".eeg",
+    ".json",
+    ".log",
+    ".m",
+    ".mat",
+    ".py",
+    ".tsv",
+    ".txt",
+    ".vhdr",
+    ".vmrk",
+    ".zip"
+  ],
+  "description": "Intraoperative local field potential recordings from deep brain stimulation leads in the subthalamic nucleus or ventral intermediate thalamus, together with subgaleal electrode strips over sensorimotor cortex. Data were collected from 23 patients at the University of Iowa during an auditory stop-signal task and a go-only localizer. The dataset supports analysis of cortico-subcortical beta burst dynamics underlying movement cancellation.",
+  "methods_description": "Recordings were made during DBS surgery using a TDT system with an RA16PA Medusa preamplifier and RA16LI headstage (hardware low-pass 7.5 kHz). Medtronic 3387 leads were placed in the STN or VIM, and 4-, 6- or 8-contact subgaleal strips were placed over sensorimotor cortex. Sampling rates were 2000 or 24000 Hz, and task triggers were recorded as TTL pulses on an analog input channel.",
+  "keywords": [
+    {
+      "term": "intracranial EEG"
+    },
+    {
+      "term": "local field potentials"
+    },
+    {
+      "term": "Deep Brain Stimulation",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D046690"
+    },
+    {
+      "term": "Subthalamic Nucleus",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D020531"
+    },
+    {
+      "term": "beta bursts"
+    },
+    {
+      "term": "stop-signal task"
+    },
+    {
+      "term": "response inhibition"
+    }
+  ],
+  "source_hash": "6d524724258ffde8e677d9c647a0d417f8d8a658a3884892fd51bd18af98ffce"
+}
