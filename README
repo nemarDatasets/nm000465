@@ -32,3 +32,13 @@ Per-contact structure and side from the authors' channel tables; no coordinates 
 ## Privacy
 The TDT tank names in the original files contain a recording date; the copies in sourcedata/dryad-gf1vhhmq0/data were re-saved
 with the day set to 01 (MAT headers too). The behaviour files contain no age/sex/name (empty fields); output folder paths only.
+
+## Ethics
+Quoted verbatim from the article (Diesburg DA, Greenlee JDW, Wessel JR (2021), eLife 10:e70270, doi:10.7554/eLife.70270;
+section "Additional information" > "Ethics", full text Europe PMC PMC8691838):
+
+> Human subjects: Research participants signed a written informed consent document during a clinic visit prior to surgery. Experimental protocols were approved by the University of Iowa's Institutional Review Board (#201402720).
+
+The Materials and methods ("Participants") state the same approval: "These experimental protocols were approved by the
+University of Iowa’s Institutional Review Board (#201402720)." The Dryad deposit doi:10.5061/dryad.gf1vhhmq0 is the data
+release of this article.

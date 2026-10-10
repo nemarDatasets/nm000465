@@ -15,6 +15,9 @@
     "Roy J. and Lucille A. Carver College of Medicine, University of Iowa",
     "Iowa Neuroscience Institute, University of Iowa"
   ],
+  "EthicsApprovals": [
+    "University of Iowa's Institutional Review Board (#201402720)"
+  ],
   "HowToAcknowledge": "Cite Diesburg DA, Greenlee JDW, Wessel JR (2021) Cortico-subcortical beta burst dynamics underlying movement cancellation in humans. eLife 10:e70270, doi:10.7554/eLife.70270; and the Dryad dataset doi:10.5061/dryad.gf1vhhmq0.",
   "ReferencesAndLinks": [
     "https://doi.org/10.7554/eLife.70270",
