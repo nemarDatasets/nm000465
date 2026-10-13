@@ -49,5 +49,7 @@
       "Name": "b3w10_convert_betaburst.py",
       "Description": "TDT exports (MATLAB structs) to BrainVision float32, values unchanged; channel locations from the authors' getchans.m/getlocchans.m; TDT epoc stores to events.tsv. Code in code/."
     }
-  ]
+  ],
+  "DatasetDOI": "10.82901/nemar.nm000465",
+  "Version": "1.0.0"
 }
