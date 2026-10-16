@@ -1,5 +1,5 @@
 {
-  "Name": "Diesburg-2021-cortico-10.7554/elife.70270",
+  "Name": "Intraoperative STN/thalamic DBS-lead LFP with subgaleal sensorimotor strips during a stop-signal task (Diesburg, Greenlee & Wessel, 2021)",
   "BIDSVersion": "1.10.0",
   "DatasetType": "raw",
   "License": "CC0-1.0",
@@ -51,5 +51,5 @@
     }
   ],
   "DatasetDOI": "10.82901/nemar.nm000465",
-  "Version": "1.0.1"
+  "Version": "1.0.2"
 }
