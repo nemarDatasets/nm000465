@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Intraoperative STN/thalamic DBS-lead LFP with subgaleal sensorimotor strips during a stop-signal task (Diesburg, Greenlee & Wessel, 2021)",
-  "description": "Intraoperative local field potential recordings from patients undergoing deep brain stimulation surgery, acquired from subthalamic nucleus or ventral intermediate thalamus leads together with subgaleal strips over sensorimotor cortex. Patients performed an auditory stop-signal task and a go-only localizer. The dataset supports analysis of cortico-subcortical beta burst dynamics during movement cancellation, where subcortical beta bursts on successful stop trials are followed within 50 ms by sensorimotor cortical beta bursts.",
-  "methods_description": "Recordings were made at the University of Iowa Hospitals and Clinics (April 2018 to March 2020) using a TDT system with RA16PA Medusa preamplifier and RA16LI headstage (hardware low-pass 7.5 kHz). Medtronic 3387 DBS leads were placed in the STN or VIM, with 4-, 6- or 8-contact subgaleal strips over sensorimotor cortex. Sampling rates were 2000 or 24000 Hz, and task triggers were recorded as TTL pulses on an analog input channel.",
+  "description": "Intraoperative local field potentials recorded from deep brain stimulation leads in the subthalamic nucleus or ventral intermediate thalamus, together with subgaleal strips over sensorimotor cortex. Patients undergoing DBS surgery performed an auditory stop-signal task and a go-only localizer. The dataset supports investigation of cortico-subcortical beta burst dynamics underlying movement cancellation, with 47 recordings from 23 subjects.",
+  "methods_description": "Recordings were made at University of Iowa Hospitals and Clinics (April 2018 to March 2020) using a TDT system with an RA16PA Medusa preamplifier and RA16LI headstage (hardware low-pass 7.5 kHz). Medtronic 3387 DBS leads and 4-, 6- or 8-contact subgaleal strips were used. Sampling rates were 2000 or 24000 Hz. Task triggers were captured as TTL pulses on analog input channels.",
   "license": "CC0-1.0",
   "dataset_type": "raw",
   "authors": {
@@ -17,32 +17,38 @@
   },
   "keywords": [
     {
-      "term": "intracranial EEG"
-    },
-    {
-      "term": "local field potentials"
-    },
-    {
-      "term": "subthalamic nucleus"
-    },
-    {
       "term": "Deep Brain Stimulation",
       "subject_scheme": "MeSH",
       "value_uri": "http://id.nlm.nih.gov/mesh/D046690"
+    },
+    {
+      "term": "Subthalamic Nucleus",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D020531"
+    },
+    {
+      "term": "Thalamus",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D013788"
+    },
+    {
+      "term": "Parkinson Disease",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D010300"
+    },
+    {
+      "term": "Essential Tremor",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D020329"
+    },
+    {
+      "term": "intracranial LFP"
     },
     {
       "term": "beta bursts"
     },
     {
       "term": "stop-signal task"
-    },
-    {
-      "term": "response inhibition"
-    },
-    {
-      "term": "Parkinson Disease",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D010300"
     }
   ],
   "related_identifiers": [
