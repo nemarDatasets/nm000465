@@ -44,3 +44,12 @@ section "Additional information" > "Ethics", full text Europe PMC PMC8691838):
 The Materials and methods ("Participants") state the same approval: "These experimental protocols were approved by the
 University of Iowa’s Institutional Review Board (#201402720)." The Dryad deposit doi:10.5061/dryad.gf1vhhmq0 is the data
 release of this article.
+
+## Units when reading with MNE (added 2026-10-17, version 1.0.3)
+
+The release does not state the physical unit of the signal values, so the BrainVision headers and channels.tsv give
+the unit `n/a` (resolution 1) and the values are the release's numbers, unchanged. MNE and MNE-BIDS read a channel
+with unit `n/a` as volts with scale 1: `raw.get_data()` returns the stored numbers as they are, labelled V. If the
+numbers are microvolt-sized, anything that assumes volts (plot scalings, rejection thresholds, µV conversions) sees
+them 1e6 times too large. In the 2026-10-17 check the channels had a robust SD of about 14-290 in the runs read. No unit is assigned here because the source does not state one; treat the values as the
+release's numbers in an unknown unit.
