@@ -1,33 +1,238 @@
-onset	duration	trial_type	value	sample
-4.1e-05	0	Epoc	0.0	0
-4.1e-05	0	LATT	0.0	0
-4.1e-05	0	RATT	0.0	0
-4.1e-05	0	Tic2	0.0	0
-4.096041	0	Epoc	1.0	8192
-4.096041	0	LATT	0.0	8192
-4.096041	0	RATT	0.0	8192
-4.096041	0	Tic2	1.0	8192
-8.192041	0	Epoc	2.0	16384
-8.192041	0	LATT	0.0	16384
-8.192041	0	RATT	0.0	16384
-8.192041	0	Tic2	2.0	16384
-12.288041	0	Epoc	3.0	24576
-12.288041	0	LATT	0.0	24576
-12.288041	0	RATT	0.0	24576
-12.288041	0	Tic2	3.0	24576
-16.384041	0	Epoc	4.0	32768
-16.384041	0	LATT	0.0	32768
-16.384041	0	RATT	0.0	32768
-16.384041	0	Tic2	4.0	32768
-20.480041	0	Epoc	5.0	40960
-20.480041	0	LATT	0.0	40960
-20.480041	0	RATT	0.0	40960
-20.480041	0	Tic2	5.0	40960
-24.576041	0	Epoc	6.0	49152
-24.576041	0	LATT	0.0	49152
-24.576041	0	RATT	0.0	49152
-24.576041	0	Tic2	6.0	49152
-28.672041	0	Epoc	7.0	57344
-28.672041	0	LATT	0.0	57344
-28.672041	0	RATT	0.0	57344
-28.672041	0	Tic2	7.0	57344
+onset	duration	trial_type	value	sample	trial	block	side	stop_trial	ssd	resp_side	rt	acc	stop_trigger_sample
+4.1e-05	0	Epoc	0.0	0	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+4.1e-05	0	LATT	0.0	0	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+4.1e-05	0	RATT	0.0	0	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+4.1e-05	0	Tic2	0.0	0	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+1.806500	0	GoStimulus	n/a	3613	1	1	2	0	n/a	3	742.685	1	n/a
+2.549500	0	Response	n/a	5099	1	1	2	0	n/a	3	742.685	1	n/a
+4.096041	0	Epoc	1.0	8192	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+4.096041	0	LATT	0.0	8192	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+4.096041	0	RATT	0.0	8192	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+4.096041	0	Tic2	1.0	8192	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+5.795000	0	GoStimulus	n/a	11590	2	1	1	1	n/a	1	1689.41	4	n/a
+6.295000	0	StopStimulus	n/a	12590	2	1	1	1	500	1	1689.41	4	12674
+7.484000	0	Response	n/a	14968	2	1	1	1	n/a	1	1689.41	4	n/a
+8.192041	0	Epoc	2.0	16384	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+8.192041	0	LATT	0.0	16384	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+8.192041	0	RATT	0.0	16384	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+8.192041	0	Tic2	2.0	16384	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+9.796000	0	GoStimulus	n/a	19592	3	1	2	0	n/a	3	720.096	1	n/a
+10.516000	0	Response	n/a	21032	3	1	2	0	n/a	3	720.096	1	n/a
+12.288041	0	Epoc	3.0	24576	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+12.288041	0	LATT	0.0	24576	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+12.288041	0	RATT	0.0	24576	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+12.288041	0	Tic2	3.0	24576	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+13.798500	0	GoStimulus	n/a	27597	4	1	1	1	n/a	1	654.523	4	n/a
+14.248500	0	StopStimulus	n/a	28497	4	1	1	1	450	1	654.523	4	28582
+14.453500	0	Response	n/a	28907	4	1	1	1	n/a	1	654.523	4	n/a
+16.384041	0	Epoc	4.0	32768	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+16.384041	0	LATT	0.0	32768	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+16.384041	0	RATT	0.0	32768	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+16.384041	0	Tic2	4.0	32768	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+17.799500	0	GoStimulus	n/a	35599	5	1	1	1	n/a	0	0	3	n/a
+18.199500	0	StopStimulus	n/a	36399	5	1	1	1	400	0	0	3	36471
+20.480041	0	Epoc	5.0	40960	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+20.480041	0	LATT	0.0	40960	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+20.480041	0	RATT	0.0	40960	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+20.480041	0	Tic2	5.0	40960	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+21.801000	0	GoStimulus	n/a	43602	6	1	1	0	n/a	1	867.019	1	n/a
+22.668000	0	Response	n/a	45336	6	1	1	0	n/a	1	867.019	1	n/a
+24.576041	0	Epoc	6.0	49152	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+24.576041	0	LATT	0.0	49152	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+24.576041	0	RATT	0.0	49152	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+24.576041	0	Tic2	6.0	49152	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+25.802500	0	GoStimulus	n/a	51605	7	1	1	0	n/a	1	817.417	1	n/a
+26.619500	0	Response	n/a	53239	7	1	1	0	n/a	1	817.417	1	n/a
+28.672041	0	Epoc	7.0	57344	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+28.672041	0	LATT	0.0	57344	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+28.672041	0	RATT	0.0	57344	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+28.672041	0	Tic2	7.0	57344	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+29.803500	0	GoStimulus	n/a	59607	8	1	1	0	n/a	1	584.119	1	n/a
+30.387500	0	Response	n/a	60775	8	1	1	0	n/a	1	584.119	1	n/a
+33.805000	0	GoStimulus	n/a	67610	9	1	1	0	n/a	1	663.043	1	n/a
+34.468000	0	Response	n/a	68936	9	1	1	0	n/a	1	663.043	1	n/a
+37.806000	0	GoStimulus	n/a	75612	10	1	2	0	n/a	3	581.685	1	n/a
+38.388000	0	Response	n/a	76776	10	1	2	0	n/a	3	581.685	1	n/a
+41.807000	0	GoStimulus	n/a	83614	11	1	2	1	n/a	3	644.421	4	n/a
+42.307000	0	StopStimulus	n/a	84614	11	1	2	1	500	3	644.421	4	84693
+42.451000	0	Response	n/a	84902	11	1	2	1	n/a	3	644.421	4	n/a
+45.808500	0	GoStimulus	n/a	91617	12	1	1	1	n/a	1	971.453	4	n/a
+46.258500	0	StopStimulus	n/a	92517	12	1	1	1	450	1	971.453	4	92602
+46.779500	0	Response	n/a	93559	12	1	1	1	n/a	1	971.453	4	n/a
+49.809500	0	GoStimulus	n/a	99619	13	1	1	0	n/a	1	1122.17	1	n/a
+50.931500	0	Response	n/a	101863	13	1	1	0	n/a	1	1122.17	1	n/a
+53.812500	0	GoStimulus	n/a	107625	14	1	1	1	n/a	1	679.195	4	n/a
+54.212500	0	StopStimulus	n/a	108425	14	1	1	1	400	1	679.195	4	108499
+54.491500	0	Response	n/a	108983	14	1	1	1	n/a	1	679.195	4	n/a
+57.813500	0	GoStimulus	n/a	115627	15	1	2	1	n/a	3	1150.09	4	n/a
+58.263500	0	StopStimulus	n/a	116527	15	1	2	1	450	3	1150.09	4	116614
+58.963500	0	Response	n/a	117927	15	1	2	1	n/a	3	1150.09	4	n/a
+61.814500	0	GoStimulus	n/a	123629	16	1	2	0	n/a	3	836.89	1	n/a
+62.651500	0	Response	n/a	125303	16	1	2	0	n/a	3	836.89	1	n/a
+65.816000	0	GoStimulus	n/a	131632	17	1	2	0	n/a	3	635.815	1	n/a
+66.452000	0	Response	n/a	132904	17	1	2	0	n/a	3	635.815	1	n/a
+69.817000	0	GoStimulus	n/a	139634	18	1	2	1	n/a	3	626.554	4	n/a
+70.217000	0	StopStimulus	n/a	140434	18	1	2	1	400	3	626.554	4	140507
+70.444000	0	Response	n/a	140888	18	1	2	1	n/a	3	626.554	4	n/a
+73.818500	0	GoStimulus	n/a	147637	19	1	2	1	n/a	3	657.236	4	n/a
+74.168500	0	StopStimulus	n/a	148337	19	1	2	1	350	3	657.236	4	148414
+74.475500	0	Response	n/a	148951	19	1	2	1	n/a	3	657.236	4	n/a
+77.819500	0	GoStimulus	n/a	155639	20	1	1	0	n/a	1	904.284	1	n/a
+78.723500	0	Response	n/a	157447	20	1	1	0	n/a	1	904.284	1	n/a
+81.821000	0	GoStimulus	n/a	163642	21	1	2	1	n/a	3	735.138	4	n/a
+82.121000	0	StopStimulus	n/a	164242	21	1	2	1	300	3	735.138	4	164313
+82.556000	0	Response	n/a	165112	21	1	2	1	n/a	3	735.138	4	n/a
+85.822000	0	GoStimulus	n/a	171644	22	1	1	0	n/a	1	1069.63	1	n/a
+86.892000	0	Response	n/a	173784	22	1	1	0	n/a	1	1069.63	1	n/a
+89.823000	0	GoStimulus	n/a	179646	23	1	1	0	n/a	1	804.483	1	n/a
+90.627000	0	Response	n/a	181254	23	1	1	0	n/a	1	804.483	1	n/a
+93.824000	0	GoStimulus	n/a	187648	24	1	2	1	n/a	3	539.412	4	n/a
+94.074000	0	StopStimulus	n/a	188148	24	1	2	1	250	3	539.412	4	188224
+94.363000	0	Response	n/a	188726	24	1	2	1	n/a	3	539.412	4	n/a
+97.825500	0	GoStimulus	n/a	195651	25	1	2	0	n/a	3	690.403	1	n/a
+98.515500	0	Response	n/a	197031	25	1	2	0	n/a	3	690.403	1	n/a
+101.829500	0	GoStimulus	n/a	203659	26	1	2	0	n/a	3	526.729	1	n/a
+102.356500	0	Response	n/a	204713	26	1	2	0	n/a	3	526.729	1	n/a
+105.829500	0	GoStimulus	n/a	211659	27	1	2	0	n/a	3	821.512	1	n/a
+106.651500	0	Response	n/a	213303	27	1	2	0	n/a	3	821.512	1	n/a
+109.831000	0	GoStimulus	n/a	219662	28	1	1	1	n/a	1	612.495	4	n/a
+110.181000	0	StopStimulus	n/a	220362	28	1	1	1	350	1	612.495	4	220442
+110.443000	0	Response	n/a	220886	28	1	1	1	n/a	1	612.495	4	n/a
+113.832000	0	GoStimulus	n/a	227664	29	1	2	0	n/a	3	683.227	1	n/a
+114.515000	0	Response	n/a	229030	29	1	2	0	n/a	3	683.227	1	n/a
+117.833500	0	GoStimulus	n/a	235667	30	1	2	0	n/a	3	722.069	1	n/a
+118.555500	0	Response	n/a	237111	30	1	2	0	n/a	3	722.069	1	n/a
+121.834500	0	GoStimulus	n/a	243669	31	1	2	0	n/a	3	529.123	1	n/a
+122.363500	0	Response	n/a	244727	31	1	2	0	n/a	3	529.123	1	n/a
+125.835500	0	GoStimulus	n/a	251671	32	1	2	1	n/a	3	471.888	4	n/a
+126.035500	0	StopStimulus	n/a	252071	32	1	2	1	200	3	471.888	4	252154
+126.307500	0	Response	n/a	252615	32	1	2	1	n/a	3	471.888	4	n/a
+129.837000	0	GoStimulus	n/a	259674	33	1	2	0	n/a	3	646.779	1	n/a
+130.484000	0	Response	n/a	260968	33	1	2	0	n/a	3	646.779	1	n/a
+133.838000	0	GoStimulus	n/a	267676	34	1	2	1	n/a	3	605.594	4	n/a
+133.988000	0	StopStimulus	n/a	267976	34	1	2	1	150	3	605.594	4	268055
+134.444000	0	Response	n/a	268888	34	1	2	1	n/a	3	605.594	4	n/a
+137.839000	0	GoStimulus	n/a	275678	35	1	1	0	n/a	1	884.751	1	n/a
+138.724000	0	Response	n/a	277448	35	1	1	0	n/a	1	884.751	1	n/a
+141.840000	0	GoStimulus	n/a	283680	36	1	1	0	n/a	1	563.252	1	n/a
+142.403000	0	Response	n/a	284806	36	1	1	0	n/a	1	563.252	1	n/a
+145.841500	0	GoStimulus	n/a	291683	37	1	1	1	n/a	1	626.171	4	n/a
+146.141500	0	StopStimulus	n/a	292283	37	1	1	1	300	1	626.171	4	292365
+146.467500	0	Response	n/a	292935	37	1	1	1	n/a	1	626.171	4	n/a
+149.843000	0	GoStimulus	n/a	299686	38	1	2	0	n/a	3	928.869	1	n/a
+150.772000	0	Response	n/a	301544	38	1	2	0	n/a	3	928.869	1	n/a
+153.847000	0	GoStimulus	n/a	307694	39	1	1	0	n/a	1	813.267	1	n/a
+154.660000	0	Response	n/a	309320	39	1	1	0	n/a	1	813.267	1	n/a
+157.848000	0	GoStimulus	n/a	315696	40	1	1	0	n/a	1	804.034	1	n/a
+158.652000	0	Response	n/a	317304	40	1	1	0	n/a	1	804.034	1	n/a
+161.849000	0	GoStimulus	n/a	323698	41	1	2	0	n/a	3	666.833	1	n/a
+162.516000	0	Response	n/a	325032	41	1	2	0	n/a	3	666.833	1	n/a
+165.849500	0	GoStimulus	n/a	331699	42	1	2	0	n/a	3	1689.83	1	n/a
+167.539500	0	Response	n/a	335079	42	1	2	0	n/a	3	1689.83	1	n/a
+169.851000	0	GoStimulus	n/a	339702	43	1	1	1	n/a	1	736.522	4	n/a
+170.101000	0	StopStimulus	n/a	340202	43	1	1	1	250	1	736.522	4	340275
+170.588000	0	Response	n/a	341176	43	1	1	1	n/a	1	736.522	4	n/a
+173.852000	0	GoStimulus	n/a	347704	44	1	1	0	n/a	1	767.324	1	n/a
+174.619000	0	Response	n/a	349238	44	1	1	0	n/a	1	767.324	1	n/a
+177.853000	0	GoStimulus	n/a	355706	45	1	1	0	n/a	1	734.159	1	n/a
+178.587000	0	Response	n/a	357174	45	1	1	0	n/a	1	734.159	1	n/a
+181.854500	0	GoStimulus	n/a	363709	46	1	2	0	n/a	3	860.963	1	n/a
+182.715500	0	Response	n/a	365431	46	1	2	0	n/a	3	860.963	1	n/a
+185.855500	0	GoStimulus	n/a	371711	47	1	1	0	n/a	1	579.733	1	n/a
+186.435500	0	Response	n/a	372871	47	1	1	0	n/a	1	579.733	1	n/a
+189.857000	0	GoStimulus	n/a	379714	48	1	1	0	n/a	1	602.583	1	n/a
+190.460000	0	Response	n/a	380920	48	1	1	0	n/a	1	602.583	1	n/a
+245.505500	0	GoStimulus	n/a	491011	49	2	2	1	n/a	1	1478.33	4	n/a
+245.605500	0	StopStimulus	n/a	491211	49	2	2	1	100	1	1478.33	4	491315
+246.983500	0	Response	n/a	493967	49	2	2	1	n/a	1	1478.33	4	n/a
+249.500500	0	GoStimulus	n/a	499001	50	2	2	1	n/a	3	1471.12	4	n/a
+249.550500	0	StopStimulus	n/a	499101	50	2	2	1	50	3	1471.12	4	499308
+250.971500	0	Response	n/a	501943	50	2	2	1	n/a	3	1471.12	4	n/a
+253.502000	0	GoStimulus	n/a	507004	51	2	1	0	n/a	1	917.532	1	n/a
+254.420000	0	Response	n/a	508840	51	2	1	0	n/a	1	917.532	1	n/a
+257.503000	0	GoStimulus	n/a	515006	52	2	2	1	n/a	3	628.451	4	n/a
+257.503000	0	StopStimulus	n/a	515006	52	2	2	1	0	3	628.451	4	515312
+258.131000	0	Response	n/a	516262	52	2	2	1	n/a	3	628.451	4	n/a
+261.504000	0	GoStimulus	n/a	523008	53	2	2	0	n/a	3	523.117	1	n/a
+262.027000	0	Response	n/a	524054	53	2	2	0	n/a	3	523.117	1	n/a
+265.505500	0	GoStimulus	n/a	531011	54	2	2	0	n/a	3	521.885	1	n/a
+266.027500	0	Response	n/a	532055	54	2	2	0	n/a	3	521.885	1	n/a
+269.506500	0	GoStimulus	n/a	539013	55	2	1	0	n/a	1	1056.67	1	n/a
+270.563500	0	Response	n/a	541127	55	2	1	0	n/a	1	1056.67	1	n/a
+273.508000	0	GoStimulus	n/a	547016	56	2	2	0	n/a	0	0	99	n/a
+277.509000	0	GoStimulus	n/a	555018	57	2	1	0	n/a	1	598.351	1	n/a
+278.107000	0	Response	n/a	556214	57	2	1	0	n/a	1	598.351	1	n/a
+281.510000	0	GoStimulus	n/a	563020	58	2	2	0	n/a	0	0	99	n/a
+285.512500	0	GoStimulus	n/a	571025	59	2	2	0	n/a	0	0	99	n/a
+289.513500	0	GoStimulus	n/a	579027	60	2	2	0	n/a	0	0	99	n/a
+293.515000	0	GoStimulus	n/a	587030	61	2	1	0	n/a	1	952.137	1	n/a
+294.467000	0	Response	n/a	588934	61	2	1	0	n/a	1	952.137	1	n/a
+297.517500	0	GoStimulus	n/a	595035	62	2	2	0	n/a	0	0	99	n/a
+301.519000	0	GoStimulus	n/a	603038	63	2	1	0	n/a	1	748.373	1	n/a
+302.267000	0	Response	n/a	604534	63	2	1	0	n/a	1	748.373	1	n/a
+305.520000	0	GoStimulus	n/a	611040	64	2	1	1	n/a	1	1339.03	4	n/a
+305.720000	0	StopStimulus	n/a	611440	64	2	1	1	200	1	1339.03	4	611511
+306.859000	0	Response	n/a	613718	64	2	1	1	n/a	1	1339.03	4	n/a
+309.521500	0	GoStimulus	n/a	619043	65	2	1	0	n/a	1	1985.78	1	n/a
+311.507500	0	Response	n/a	623015	65	2	1	0	n/a	1	1985.78	1	n/a
+313.522500	0	GoStimulus	n/a	627045	66	2	2	0	n/a	0	0	99	n/a
+317.523500	0	GoStimulus	n/a	635047	67	2	1	1	n/a	1	1087.37	4	n/a
+317.673500	0	StopStimulus	n/a	635347	67	2	1	1	150	1	1087.37	4	635422
+318.610500	0	Response	n/a	637221	67	2	1	1	n/a	1	1087.37	4	n/a
+321.525000	0	GoStimulus	n/a	643050	68	2	2	1	n/a	3	1550.21	4	n/a
+321.525000	0	StopStimulus	n/a	643050	68	2	2	1	0	3	1550.21	4	643347
+323.075000	0	Response	n/a	646150	68	2	2	1	n/a	3	1550.21	4	n/a
+325.527000	0	GoStimulus	n/a	651054	69	2	2	0	n/a	3	1764.59	1	n/a
+327.292000	0	Response	n/a	654584	69	2	2	0	n/a	3	1764.59	1	n/a
+329.528000	0	GoStimulus	n/a	659056	70	2	1	0	n/a	1	1307.1	1	n/a
+330.835000	0	Response	n/a	661670	70	2	1	0	n/a	1	1307.1	1	n/a
+333.529500	0	GoStimulus	n/a	667059	71	2	1	0	n/a	0	0	99	n/a
+337.531000	0	GoStimulus	n/a	675062	72	2	2	1	n/a	1	760.508	4	n/a
+337.531000	0	StopStimulus	n/a	675062	72	2	2	1	0	1	760.508	4	675355
+338.292000	0	Response	n/a	676584	72	2	2	1	n/a	1	760.508	4	n/a
+341.531500	0	GoStimulus	n/a	683063	73	2	2	0	n/a	0	0	99	n/a
+345.533000	0	GoStimulus	n/a	691066	74	2	1	1	n/a	1	1054.23	4	n/a
+345.633000	0	StopStimulus	n/a	691266	74	2	1	1	100	1	1054.23	4	691360
+346.587000	0	Response	n/a	693174	74	2	1	1	n/a	1	1054.23	4	n/a
+349.534000	0	GoStimulus	n/a	699068	75	2	2	1	n/a	0	0	3	n/a
+349.534000	0	StopStimulus	n/a	699068	75	2	2	1	0	0	0	3	699371
+353.535500	0	GoStimulus	n/a	707071	76	2	1	1	n/a	1	1011.55	4	n/a
+353.585500	0	StopStimulus	n/a	707171	76	2	1	1	50	1	1011.55	4	707364
+354.547500	0	Response	n/a	709095	76	2	1	1	n/a	1	1011.55	4	n/a
+357.536500	0	GoStimulus	n/a	715073	77	2	1	0	n/a	1	1666.38	1	n/a
+359.202500	0	Response	n/a	718405	77	2	1	0	n/a	1	1666.38	1	n/a
+361.538000	0	GoStimulus	n/a	723076	78	2	2	0	n/a	1	1065.13	2	n/a
+362.603000	0	Response	n/a	725206	78	2	2	0	n/a	1	1065.13	2	n/a
+365.539000	0	GoStimulus	n/a	731078	79	2	1	0	n/a	0	0	99	n/a
+369.540500	0	GoStimulus	n/a	739081	80	2	1	0	n/a	0	0	99	n/a
+373.541500	0	GoStimulus	n/a	747083	81	2	1	0	n/a	0	0	99	n/a
+377.543000	0	GoStimulus	n/a	755086	82	2	1	0	n/a	1	1772.22	1	n/a
+379.315000	0	Response	n/a	758630	82	2	1	0	n/a	1	1772.22	1	n/a
+381.544000	0	GoStimulus	n/a	763088	83	2	1	0	n/a	0	0	99	n/a
+385.545500	0	GoStimulus	n/a	771091	84	2	1	1	n/a	3	1505.87	4	n/a
+385.545500	0	StopStimulus	n/a	771091	84	2	1	1	0	3	1505.87	4	771382
+387.051500	0	Response	n/a	774103	84	2	1	1	n/a	3	1505.87	4	n/a
+389.546500	0	GoStimulus	n/a	779093	85	2	1	0	n/a	1	1416.66	1	n/a
+390.963500	0	Response	n/a	781927	85	2	1	0	n/a	1	1416.66	1	n/a
+393.548000	0	GoStimulus	n/a	787096	86	2	1	1	n/a	1	679.336	4	n/a
+393.548000	0	StopStimulus	n/a	787096	86	2	1	1	0	1	679.336	4	787402
+394.227000	0	Response	n/a	788454	86	2	1	1	n/a	1	679.336	4	n/a
+397.549500	0	GoStimulus	n/a	795099	87	2	2	1	n/a	3	726.041	4	n/a
+397.549500	0	StopStimulus	n/a	795099	87	2	2	1	0	3	726.041	4	795397
+398.275500	0	Response	n/a	796551	87	2	2	1	n/a	3	726.041	4	n/a
+401.550500	0	GoStimulus	n/a	803101	88	2	2	0	n/a	3	1316.8	1	n/a
+402.867500	0	Response	n/a	805735	88	2	2	0	n/a	3	1316.8	1	n/a
+405.551500	0	GoStimulus	n/a	811103	89	2	1	1	n/a	1	1083.44	4	n/a
+405.551500	0	StopStimulus	n/a	811103	89	2	1	1	0	1	1083.44	4	811401
+406.634500	0	Response	n/a	813269	89	2	1	1	n/a	1	1083.44	4	n/a
+409.553000	0	GoStimulus	n/a	819106	90	2	2	0	n/a	0	0	99	n/a
+413.554000	0	GoStimulus	n/a	827108	91	2	2	0	n/a	0	0	99	n/a
+417.555000	0	GoStimulus	n/a	835110	92	2	1	1	n/a	1	911.761	4	n/a
+417.555000	0	StopStimulus	n/a	835110	92	2	1	1	0	1	911.761	4	835416
+418.467000	0	Response	n/a	836934	92	2	1	1	n/a	1	911.761	4	n/a
+421.556500	0	GoStimulus	n/a	843113	93	2	2	0	n/a	0	0	99	n/a
+425.558000	0	GoStimulus	n/a	851116	94	2	2	1	n/a	3	1293.21	4	n/a
+425.558000	0	StopStimulus	n/a	851116	94	2	2	1	0	3	1293.21	4	851421
+426.851000	0	Response	n/a	853702	94	2	2	1	n/a	3	1293.21	4	n/a
+429.559000	0	GoStimulus	n/a	859118	95	2	2	0	n/a	0	0	99	n/a
+433.560500	0	GoStimulus	n/a	867121	96	2	1	0	n/a	0	0	99	n/a
