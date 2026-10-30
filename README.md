@@ -68,7 +68,7 @@ the RT. The code also removes one extra trigger at the start of sub-101 and a go
 to `events.tsv` is proposed but not done in this branch.
 
 **sub-128 stop-signal run: channel types not given.** The authors' stop-signal channel table (`getchans.m`) has no
-entry for subject 128 (their analysis left this subject out of the stop-signal task), so its 20 `LFPx_RZ2_chn*`
+entry for subject 128 (the release does not say why), so its 20 `LFPx_RZ2_chn*`
 channels stay MISC with an empty label. The localizer table (`getlocchans.m`) does label sub-128 channels 1-8 as
 subgaleal contacts, but the wiring is not always the same in the two tasks (in subject 115 the left and right strips
 are swapped between the tables), so the localizer labels are not copied to the stop-signal run.
