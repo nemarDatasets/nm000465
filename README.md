@@ -64,8 +64,14 @@ first sample of each run, minus 3 samples), one trigger per go trial and two per
 trial table `trialseq` of `sourcedata/dryad-gf1vhhmq0/behav/Subject_<n>.mat` (columns of `Basicstop_columns.m`); the
 stop-signal latency is then the go trigger plus the left/right stop-signal delay, and the response the go trigger plus
 the RT. The code also removes one extra trigger at the start of sub-101 and a go-only block at the end of sub-104
-(triggers 257 onwards), and down-samples the 24 kHz trigger channel of sub-118. A deterministic port of this procedure
-to `events.tsv` is proposed but not done in this branch.
+(triggers 257 onwards), and down-samples the 24 kHz trigger channel of sub-118. This procedure was ported to
+`code/fix-20261030_stopsignal_events.py` and applied: the stop-signal `events.tsv` of 22 of the 23 participants now also
+hold `GoStimulus`, `StopStimulus` and `Response` rows with the trial's behaviour columns (`task-stopsignal_events.json`);
+the TDT epoc rows are unchanged. In all 22 runs the trigger count equals the expected 256 (192 trials, 64 with a stop
+signal) and every event lies inside the recording (`code/fix-20261030_stopsignal_events_report.json`). sub-116 is left
+without task events: its TTL channel has 129 triggers for 192 trials (the authors' code stops on such a mismatch; the
+release has a separate `behav/116 extra` folder that the code does not use). Event times inherit the authors' rules
+(trigger = last high sample minus 3; stop signal = go trigger + SSD).
 
 **sub-128 stop-signal run: channel types not given.** The authors' stop-signal channel table (`getchans.m`) has no
 entry for subject 128 (the release does not say why), so its 20 `LFPx_RZ2_chn*`

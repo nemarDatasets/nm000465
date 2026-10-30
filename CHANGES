@@ -1,4 +1,7 @@
 Unreleased (branch fix-20261030, Oct 2026)
+  - Stop-signal events.tsv of 22 participants: GoStimulus/StopStimulus/Response rows rebuilt from the TTL channel and behaviour files with a port of the authors' ImportRawData.m (code/fix-20261030_stopsignal_events.py; 256/256 triggers in every run); sub-116 left out (129 triggers for 192 trials). task-stopsignal_events.json describes the new rows and columns.
+
+Unreleased (branch fix-20261030, Oct 2026)
   - README: how the task events can be rebuilt from the TTL channel and behaviour files with the authors' ImportRawData.m (not done here); why sub-128 stop-signal channels stay MISC (no entry in the authors' getchans.m). No data or sidecar change.
 
 1.0.3 2026-10-17
