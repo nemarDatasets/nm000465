@@ -53,3 +53,22 @@ with unit `n/a` as volts with scale 1: `raw.get_data()` returns the stored numbe
 numbers are microvolt-sized, anything that assumes volts (plot scalings, rejection thresholds, µV conversions) sees
 them 1e6 times too large. In the 2026-10-17 check the channels had a robust SD of about 14-290 in the runs read. No unit is assigned here because the source does not state one; treat the values as the
 release's numbers in an unknown unit.
+
+## Task events and sub-128 channel types (fix-20261030, Oct 2026)
+
+**Task events are not in `events.tsv` yet.** The `events.tsv` files list the TDT epoc stores only (`Epoc`, `LATT`, `RATT`,
+`Tic2`, ... at the start of the file); they are not the task events. The go and stop stimuli and the responses can be
+rebuilt from the release with the authors' own import code (`functions/ImportRawData.m` in
+`sourcedata/zenodo-4784092/functions.zip`): TTL up-flanks in `Inpt_RZ2_chn001` (samples where the channel exceeds 1,
+first sample of each run, minus 3 samples), one trigger per go trial and two per stop trial, matched in order to the
+trial table `trialseq` of `sourcedata/dryad-gf1vhhmq0/behav/Subject_<n>.mat` (columns of `Basicstop_columns.m`); the
+stop-signal latency is then the go trigger plus the left/right stop-signal delay, and the response the go trigger plus
+the RT. The code also removes one extra trigger at the start of sub-101 and a go-only block at the end of sub-104
+(triggers 257 onwards), and down-samples the 24 kHz trigger channel of sub-118. A deterministic port of this procedure
+to `events.tsv` is proposed but not done in this branch.
+
+**sub-128 stop-signal run: channel types not given.** The authors' stop-signal channel table (`getchans.m`) has no
+entry for subject 128 (their analysis left this subject out of the stop-signal task), so its 20 `LFPx_RZ2_chn*`
+channels stay MISC with an empty label. The localizer table (`getlocchans.m`) does label sub-128 channels 1-8 as
+subgaleal contacts, but the wiring is not always the same in the two tasks (in subject 115 the left and right strips
+are swapped between the tables), so the localizer labels are not copied to the stop-signal run.
