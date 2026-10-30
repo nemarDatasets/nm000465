@@ -8,12 +8,7 @@
     "Units": "s"
   },
   "trial_type": {
-    "Description": "TDT epoc store name (e.g. Tic2/Epoc = TDT tick markers, LATT/RATT = attenuation stores), or a task event rebuilt with the authors' ImportRawData.m procedure (code/fix-20261030_stopsignal_events.py): GoStimulus (TTL trigger of the go signal), StopStimulus (go trigger + stop-signal delay of the trial's side), Response (go trigger + RT).",
-    "Levels": {
-      "GoStimulus": "go stimulus onset (TTL up-flank on Inpt_RZ2_chn001, last high sample minus 3, as in the authors' code)",
-      "StopStimulus": "stop signal: go trigger + SSD (left or right per trial side); the TTL of the stop trigger itself is in stop_trigger_sample",
-      "Response": "button press: go trigger + round(RT ms) x sampling frequency / 1000 (go triggers with RT > 0, including failed stops)"
-    }
+    "Description": "TDT epoc store name (e.g. Tic2/Epoc = TDT tick markers, LATT/RATT = attenuation stores), or a task event rebuilt with the authors' ImportRawData.m procedure (code/fix-20261030_stopsignal_events.py): GoStimulus (TTL trigger of the go signal), StopStimulus (go trigger + stop-signal delay of the trial's side), Response (go trigger + RT). Task rows: GoStimulus = go stimulus onset (TTL up-flank on Inpt_RZ2_chn001, last high sample minus 3, as in the authors' code); StopStimulus = stop signal: go trigger + SSD (left or right per trial side); the TTL of the stop trigger itself is in stop_trigger_sample; Response = button press: go trigger + round(RT ms) x sampling frequency / 1000 (go triggers with RT > 0, including failed stops)."
   },
   "value": {
     "Description": "Epoc value (TDT epoc rows); n/a for task rows"
