@@ -140,10 +140,52 @@
   "all_inside": true
  },
  "sub-116": {
-  "status": "mismatch",
-  "n_triggers": 129,
-  "n_trials": 192,
-  "expected": 256.0
+  "status": "ok",
+  "run": "sub-116_task-stopsignal_run-1_ieeg.vhdr",
+  "ttl_run": "sub-116_task-stopsignal_run-1_ieeg.vhdr",
+  "n_trials": 96,
+  "n_triggers": 128,
+  "n_go": 96,
+  "n_stop": 32,
+  "n_resp": 77,
+  "first_s": 1.8065,
+  "last_s": 433.5605,
+  "n_samples": 889612,
+  "all_inside": true,
+  "partial_alignment": {
+   "n_completed": 96,
+   "n_ttl_trials": 97,
+   "n_ttl_stop": 32,
+   "n_fits": 1,
+   "fits": [
+    {
+     "ttl_trial": 0,
+     "row": 0,
+     "n": 96,
+     "max_interval_dev_ms": 15.817045211791836,
+     "median_interval_dev_ms": 0.25998497011414656
+    }
+   ],
+   "tol_ms": 25.0,
+   "pair_s": 1.05,
+   "status": "aligned",
+   "trigger_first": 0,
+   "trigger_last": 127,
+   "row_first": 0,
+   "row_last": 95,
+   "unmatched_triggers": [
+    {
+     "index": 128,
+     "onset_s": 441.2925,
+     "s_after_previous": 7.732
+    }
+   ],
+   "stop_gap_minus_ssd_ms": {
+    "min": 35.5,
+    "median": 42.5,
+    "max": 153.0
+   }
+  }
  },
  "sub-117": {
   "status": "ok",

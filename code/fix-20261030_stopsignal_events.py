@@ -17,6 +17,18 @@ sourcedata/zenodo-4784092/functions.zip), applied to the BIDS stop-signal runs:
   * srate: 24000 for subjects 101, 104, 105, 106, else 2000 (as in the code); checked against the run's header.
 The TDT epoc rows already in events.tsv are kept; task rows are added with extra columns. Output: one events.tsv per
 stop-signal run, a report JSON. Usage: fix-20261030_stopsignal_events.py <dataset root (with annexed content)> <report>
+
+Partial recordings (added for sub-116, which the authors excluded before import: StopOR_initialize.m removes
+datasets([11 20]) = Subject_116 and Subject_128 by sorted file order). When the trigger count differs from the code's
+expectation, the run is aligned only if the alignment is unique and exact, else it is left without task events:
+  * completed behaviour trials = the leading rows with a recorded outcome (acc != 0; Audiostop.m saves trialseq at the
+    end of every trial, so rows of trials that never ran stay all-zero apart from their design columns);
+  * the TTL trigger train is split into trials: a trigger followed by a second one < 1.05 s later is a stop trial
+    (go trigger + stop trigger; the task's SSD maximum is 1000 ms and trials last 4 s), otherwise a go trial;
+  * every contiguous placement (TTL trial offset o, behaviour row offset b) is scored over its overlap: identical
+    go/stop sequence and trial-onset intervals equal to the behaviour `time` column intervals within 25 ms each;
+  * accepted only if exactly one placement covers all completed rows; triggers outside it must be at most one
+    trailing go trigger (a trial started after the last saved one, e.g. at the end of the recording), reported.
 """
 import csv, glob, io, json, os, re, sys
 import numpy as np
@@ -42,6 +54,50 @@ def channel(vhdr, name):
     dt = {"IEEE_FLOAT_32": "<f4", "INT_16": "<i2"}[fmt]
     a = np.memmap(eeg, dtype=dt, mode="r")
     return np.asarray(a.reshape(-1, nch)[:, names.index(name)], dtype=np.float64), fs
+
+
+def align_partial(trig, ts, srate, pair_s=1.05, tol_ms=25.0):
+    """Unique exact placement of the TTL trial train on the completed behaviour rows (see module docstring)."""
+    done = int(np.argmin(ts[:, COL["acc"]] != 0)) if (ts[:, COL["acc"]] == 0).any() else len(ts)
+    if done == 0 or (ts[done:, COL["acc"]] != 0).any():
+        return dict(status="no_completed_prefix", n_completed=done)
+    kinds, first_trig, i = [], [], 0
+    while i < len(trig):
+        if i + 1 < len(trig) and (trig[i + 1] - trig[i]) / srate < pair_s:
+            kinds.append(1); first_trig.append(i); i += 2
+        else:
+            kinds.append(0); first_trig.append(i); i += 1
+    kinds = np.array(kinds); on = trig[first_trig] / srate
+    bk = ts[:done, COL["stop"]].astype(int); bt = ts[:done, COL["time"]]
+    fits = []
+    placements = [(o, 0) for o in range(len(kinds))] + [(0, b) for b in range(1, done)]  # one per relative shift
+    for o, b in placements:
+        n = min(len(kinds) - o, done - b)
+        if n < 10:
+            continue
+        if not np.array_equal(kinds[o:o + n], bk[b:b + n]):
+            continue
+        dev = np.abs(np.diff(on[o:o + n]) - np.diff(bt[b:b + n])) * 1000
+        if dev.max() <= tol_ms:
+            fits.append(dict(ttl_trial=o, row=b, n=int(n), max_interval_dev_ms=float(dev.max()),
+                             median_interval_dev_ms=float(np.median(dev))))
+    full = [f for f in fits if f["row"] == 0 and f["n"] == done]
+    out = dict(n_completed=done, n_ttl_trials=int(len(kinds)), n_ttl_stop=int(kinds.sum()), n_fits=len(fits),
+               fits=fits[:20], tol_ms=tol_ms, pair_s=pair_s)
+    if len(fits) != 1 or len(full) != 1:
+        out["status"] = "ambiguous_or_none"; return out
+    f = full[0]; o = f["ttl_trial"]
+    t0 = first_trig[o]; t1 = first_trig[o + done - 1] + (1 if kinds[o + done - 1] == 1 else 0)
+    left = list(range(0, t0)) + list(range(t1 + 1, len(trig)))
+    if not (len(left) == 0 or (left == [len(trig) - 1] and kinds[-1] == 0)):
+        out["status"] = "unexplained_triggers"; out["left"] = left; return out
+    gaps = [(trig[first_trig[o + k] + 1] - trig[first_trig[o + k]]) / srate * 1000 - (ts[k, COL["lssd"]] if ts[k, COL["dir"]] == 1 else ts[k, COL["rssd"]])
+            for k in range(done) if kinds[o + k] == 1]
+    out.update(status="aligned", trigger_first=int(t0), trigger_last=int(t1), row_first=0, row_last=done - 1,
+               unmatched_triggers=[dict(index=int(j), onset_s=float(trig[j] / srate),
+                                        s_after_previous=float((trig[j] - trig[j - 1]) / srate)) for j in left],
+               stop_gap_minus_ssd_ms=dict(min=float(np.min(gaps)), median=float(np.median(gaps)), max=float(np.max(gaps))))
+    return out
 
 
 rep = {}
@@ -78,8 +134,15 @@ for beh in sorted(glob.glob(f"{root}/sourcedata/dryad-gf1vhhmq0/behav/Subject_*.
         triggers = triggers[:256]
     ts = sio.loadmat(beh)["trialseq"].astype(float)
     expected = len(ts) + len(ts) / 3
+    partial = None
     if expected != len(triggers):
-        rep[sub] = dict(status="mismatch", n_triggers=len(triggers), n_trials=len(ts), expected=expected); continue
+        partial = align_partial(np.asarray(triggers), ts, srate)
+        if partial["status"] != "aligned":
+            rep[sub] = dict(status="mismatch", n_triggers=len(triggers), n_trials=len(ts), expected=expected,
+                            alignment=partial); continue
+        triggers = triggers[partial["trigger_first"]:partial["trigger_last"] + 1]
+        ts = ts[partial["row_first"]:partial["row_last"] + 1]
+        assert len(triggers) == len(ts) + int((ts[:, COL["stop"]] == 1).sum())
     ts[ts[:, COL["lssd"]] < 0, COL["lssd"]] = 0
     ts[ts[:, COL["rssd"]] < 0, COL["rssd"]] = 0
     cls, tnum = [], []
@@ -131,6 +194,8 @@ for beh in sorted(glob.glob(f"{root}/sourcedata/dryad-gf1vhhmq0/behav/Subject_*.
                     n_resp=sum(e["trial_type"] == "Response" for e in ev),
                     first_s=ev[0]["sample"] / srate, last_s=ev[-1]["sample"] / srate, n_samples=int(nsamp),
                     all_inside=bool(all(0 <= e["sample"] < nsamp for e in ev)))
+    if partial is not None:
+        rep[sub]["partial_alignment"] = partial
     print(sub, rep[sub], flush=True)
 json.dump(rep, open(report_path, "w"), indent=1)
 print("subjects", len(rep), {s: v["status"] for s, v in rep.items()})
