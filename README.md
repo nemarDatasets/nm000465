@@ -44,3 +44,37 @@ section "Additional information" > "Ethics", full text Europe PMC PMC8691838):
 The Materials and methods ("Participants") state the same approval: "These experimental protocols were approved by the
 University of Iowa’s Institutional Review Board (#201402720)." The Dryad deposit doi:10.5061/dryad.gf1vhhmq0 is the data
 release of this article.
+
+## Units when reading with MNE (added 2026-10-17, version 1.0.3)
+
+The release does not state the physical unit of the signal values, so the BrainVision headers and channels.tsv give
+the unit `n/a` (resolution 1) and the values are the release's numbers, unchanged. MNE and MNE-BIDS read a channel
+with unit `n/a` as volts with scale 1: `raw.get_data()` returns the stored numbers as they are, labelled V. If the
+numbers are microvolt-sized, anything that assumes volts (plot scalings, rejection thresholds, µV conversions) sees
+them 1e6 times too large. In the 2026-10-17 check the channels had a robust SD of about 14-290 in the runs read. No unit is assigned here because the source does not state one; treat the values as the
+release's numbers in an unknown unit.
+
+## Task events and sub-128 channel types (fix-20261030, Oct 2026)
+
+**Task events are not in `events.tsv` yet.** The `events.tsv` files list the TDT epoc stores only (`Epoc`, `LATT`, `RATT`,
+`Tic2`, ... at the start of the file); they are not the task events. The go and stop stimuli and the responses can be
+rebuilt from the release with the authors' own import code (`functions/ImportRawData.m` in
+`sourcedata/zenodo-4784092/functions.zip`): TTL up-flanks in `Inpt_RZ2_chn001` (samples where the channel exceeds 1,
+first sample of each run, minus 3 samples), one trigger per go trial and two per stop trial, matched in order to the
+trial table `trialseq` of `sourcedata/dryad-gf1vhhmq0/behav/Subject_<n>.mat` (columns of `Basicstop_columns.m`); the
+stop-signal latency is then the go trigger plus the left/right stop-signal delay, and the response the go trigger plus
+the RT. The code also removes one extra trigger at the start of sub-101 and a go-only block at the end of sub-104
+(triggers 257 onwards), and down-samples the 24 kHz trigger channel of sub-118. This procedure was ported to
+`code/fix-20261030_stopsignal_events.py` and applied: the stop-signal `events.tsv` of 22 of the 23 participants now also
+hold `GoStimulus`, `StopStimulus` and `Response` rows with the trial's behaviour columns (`task-stopsignal_events.json`);
+the TDT epoc rows are unchanged. In all 22 runs the trigger count equals the expected 256 (192 trials, 64 with a stop
+signal) and every event lies inside the recording (`code/fix-20261030_stopsignal_events_report.json`). sub-116 is left
+without task events: its TTL channel has 129 triggers for 192 trials (the authors' code stops on such a mismatch; the
+release has a separate `behav/116 extra` folder that the code does not use). Event times inherit the authors' rules
+(trigger = last high sample minus 3; stop signal = go trigger + SSD).
+
+**sub-128 stop-signal run: channel types not given.** The authors' stop-signal channel table (`getchans.m`) has no
+entry for subject 128 (the release does not say why), so its 20 `LFPx_RZ2_chn*`
+channels stay MISC with an empty label. The localizer table (`getlocchans.m`) does label sub-128 channels 1-8 as
+subgaleal contacts, but the wiring is not always the same in the two tasks (in subject 115 the left and right strips
+are swapped between the tables), so the localizer labels are not copied to the stop-signal run.
